@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<manifest>
+  <control namespace="ShakingTextNamespace" constructor="ShakingText" version="0.0.1" display-name-key="ShakingText" description-key="ShakingText description" control-type="virtual" >
+    <external-service-usage enabled="false">
+    </external-service-usage>
+    <!-- property node identifies a specific, configurable piece of data that the control expects from CDS -->
+    <property name="dummytext" display-name-key="dummytext" description-key="dummytext" of-type="SingleLine.Text" usage="bound" required="false" />
+    <property name="inputtext" display-name-key="inputtext" description-key="inputtext" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="fontSize" display-name-key="fontSize" description-key="fontSize" of-type="SingleLine.Text" usage="input" required="true" />
+    <property name="color" display-name-key="color" description-key="color" of-type="SingleLine.Text" usage="input" required="true"/>
+    <resources>
+      <code path="index.ts" order="1"/>
+      <platform-library name="React" version="16.8.6" />
+    </resources>
+  </control>
+</manifest>
